@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a= prompt("Nhập số phút:")
+    alert(a + "là số phút bạn đã gọi")
+    phicodinh = 25000
+    if(a>200)
+    {
+        cuocdienthoai=(a-200)*200+150*400+50*600+phicodinh
+        document.write(cuocdienthoai+ "là số tiền phải trả");
+    }
+    else if(a>150)
+    {
+        cuocdienthoai=(a-150)*400+50*600+phicodinh
+        document.write(cuocdienthoai+ "là số tiền phải trả");
+    }
+    else
+    {
+        cuocdienthoai=a*600+phicodinh ;
+        document.write(cuocdienthoai+ "là số tiền phải trả");
+    }
+</script>
+</body>
+</html>
