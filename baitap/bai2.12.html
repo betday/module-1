@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var tiengoc = +prompt("Nhập số tiền gốc: ");
+    var tienThang = +prompt("Nhập số tiền hàng tháng :");
+    var tienLai;
+    if (tiengoc < 0 || tienThang < 0)
+    {
+        alert("Nhập sai ");
+    }
+    else
+    {
+        if (tienThang > 10)
+        {
+            tienLai = tiengoc * 10 /100;
+        }
+        else
+        {
+            if (tienThang > 6)
+            {
+                tienLai = tiengoc * 5 / 100;
+            }
+            else
+            {
+                tienLai = tiengoc * 0.5 /100;
+            }
+        }
+    }
+    let tientra = tiengoc + tienLai;
+    alert("Tiền phải trả : " + tientra + "Dong");
+</script>
+</body>
+</html>
