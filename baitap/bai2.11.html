@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var thue = +prompt("Nhập thu nhập cá nhân:");
+    if (isNaN(thue) === true)
+    {
+        document.write("Nhập sai");
+    }
+    else
+    {
+        if (thue < 10)
+        {
+            alert("Thuế là: " + thue * 10 / 100 + "Dong");
+        }
+        else
+        {
+            alert("Thuế là: " + thue * 15 / 100 + "Dong");
+        }
+    }
+</script>
+</body>
+</html>
