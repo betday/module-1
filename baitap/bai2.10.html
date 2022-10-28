@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var p = +prompt("Nhập công suất : ");
+    var t = +prompt("Nhập thời gian đã sử dụng : ");
+    var a = p*t;
+    var tiendien = 11;
+    if(isNaN(p) == true && isNaN(t) == true)
+    {
+        document.write("bạn đã nhập sai");
+    }
+    else
+    {
+        document.write("Điện năng đã tiêu thụ: " + a + " (kwh) <br>");
+        document.write("Tiền điện : " + tiendien * a  + " Dong");
+    }
+</script>
+</body>
+</html>
