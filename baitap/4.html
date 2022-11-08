@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=prompt("nhập số phần tử: ")
+    if(n<=0){
+        alert("nhập lại")
+    }else{
+        if(n<3){
+            document.write("day fibonacci: ")
+            for (let i=0;i<n;i++){
+                document.write(1+" ")
+            }
+        }else{
+            let n1=1;
+            let n2=1;
+            for(let i=3;i<=n;i++){
+                let n3=n2+n1;
+                if(n3%5==0){
+                    document.write("<br> phần tử thứ " + i + "  chia hết cho 5");
+                    break
+                }
+                n1=n2;
+                n2=n3;
+            }
+        }
+    }
+</script>
+</body>
+</html>
